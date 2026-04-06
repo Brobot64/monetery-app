@@ -12,12 +12,12 @@ export default function TabHome() {
             <Text className="text-xl font-bold text-green-500">
                 Welcome to Home Tab!
             </Text>
-            <Link href="/onboarding" className="mt-4 rounded bg-primary text-white p-4 bg-black">Go To Onboarding</Link>
-            <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary text-white p-4 bg-black">Go To Sign Up</Link>
-            <Link href="/(auth)/sign-in" className="mt-4 rounded bg-primary text-white p-4 bg-black">Go To Sign In</Link>
+            <Link href="/onboarding" className="mt-4 rounded text-white p-4 bg-black">Go To Onboarding</Link>
+            <Link href="/(auth)/sign-up" className="mt-4 rounded text-white p-4 bg-black">Go To Sign Up</Link>
+            <Link href="/(auth)/sign-in" className="mt-4 rounded text-white p-4 bg-black">Go To Sign In</Link>
 
 
-            <Link href="/app/subscriptions/spotify" className="mt-4 rounded bg-primary text-white p-4 bg-black">Spotify ption</Link>
+            <Link href="/subscriptions/spotify" className="mt-4 rounded text-white p-4 bg-black">Spotify Subscription</Link>
 
 
             <Link
@@ -25,7 +25,7 @@ export default function TabHome() {
                     pathname: "/subscriptions/[id]",
                     params: { id: "claude" },
                 }}
-                className="mt-4 rounded bg-primary text-white p-4 bg-black">
+                className="mt-4 rounded text-white p-4 bg-black">
                 Claude Max Subscription
             </Link>
 
