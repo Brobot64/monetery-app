@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import {tabs} from "@/constants/data";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import { colors, components } from "@/constants/theme";
 import {View, Image, ImageSourcePropType} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -50,7 +50,7 @@ const TabLayout = () => {
                     shadowRadius: 3.84,
                 },
                 tabBarItemStyle: {
-                    paddingVertical: 10,
+                    paddingVertical: tabBar.itemPaddingVertical,
                 },
                 tabBarIconStyle: {
                     width: '100%',
